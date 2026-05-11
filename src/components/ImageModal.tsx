@@ -9,6 +9,7 @@ type ImageModalProps = {
 
 export function ImageModal({ work, onClose }: ImageModalProps) {
   const visibleTags = work.tags.filter((tag) => tag !== categoryLabels[work.category]).slice(0, 3);
+  const imageSrc = `${import.meta.env.BASE_URL}${work.image.replace(/^\//, '')}`;
 
   useEffect(() => {
     const originalOverflow = document.body.style.overflow;
@@ -41,7 +42,7 @@ export function ImageModal({ work, onClose }: ImageModalProps) {
           ×
         </button>
         <div className="image-modal-media">
-          <img src={work.image} alt={work.title} />
+          <img src={imageSrc} alt={work.title} />
         </div>
         <div className="image-modal-body">
           <div className="work-labels modal-labels">

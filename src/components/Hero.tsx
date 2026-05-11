@@ -1,4 +1,6 @@
 export function Hero() {
+  const heroImage = `${import.meta.env.BASE_URL}images/works/010rikuHalloween.PNG`;
+
   return (
     <section className="hero-section">
       <div className="hero-copy">
@@ -10,7 +12,7 @@ export function Hero() {
         </p>
       </div>
       <div className="hero-visual" aria-label="ハロウィン衣装キャラクター">
-        <img src="/images/works/010rikuHalloween.PNG" alt="ハロウィン衣装キャラクター" />
+        <img src={heroImage} alt="ハロウィン衣装キャラクター" />
       </div>
     </section>
   );

@@ -8,6 +8,7 @@ type WorkCardProps = {
 
 export function WorkCard({ work, onImageClick }: WorkCardProps) {
   const visibleTags = work.tags.filter((tag) => tag !== categoryLabels[work.category]).slice(0, 3);
+  const imageSrc = `${import.meta.env.BASE_URL}${work.image.replace(/^\//, '')}`;
 
   return (
     <article className="work-card">
@@ -17,7 +18,7 @@ export function WorkCard({ work, onImageClick }: WorkCardProps) {
         onClick={() => onImageClick?.(work)}
         aria-label={`${work.title}を拡大表示`}
       >
-        <img src={work.image} alt={work.title} />
+        <img src={imageSrc} alt={work.title} />
       </button>
       <div className="work-card-body">
         <div className="work-labels">
