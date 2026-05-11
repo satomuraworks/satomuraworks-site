@@ -1,24 +1,16 @@
 export function Hero() {
   return (
-    <section className="hero-section" id="top">
+    <section className="hero-section">
       <div className="hero-copy">
-        <p className="eyebrow">Illustration / Design / Web</p>
-        <h1>やさしい表現で、伝わるかたちをつくる。</h1>
+        <p className="eyebrow">official site & portfolio</p>
+        <h1>satomuraworks</h1>
         <p>
-          個人クリエイターとして、イラスト・デザイン・Web制作を中心に活動しています。
-          作品の雰囲気と制作できることがひと目で伝わる公式サイトです。
+          イラスト、デザイン素材、キャラクター作品などを掲載している、佐藤み。本人の公式サイトです。
+          ご依頼・販売ページ・SNSは、公式リンクからご確認ください。
         </p>
-        <div className="hero-actions">
-          <a className="button primary" href="#works">
-            Worksを見る
-          </a>
-          <a className="button secondary" href="#contact">
-            相談する
-          </a>
-        </div>
       </div>
-      <div className="hero-visual" aria-label="作品イメージ">
-        <img src="/assets/hero-visual.svg" alt="" />
+      <div className="hero-visual" aria-label="ハロウィン衣装キャラクター">
+        <img src="/images/works/010rikuHalloween.PNG" alt="ハロウィン衣装キャラクター" />
       </div>
     </section>
   );

@@ -1,2 +1,3 @@
-# satomuraworks-site
-Official website for satomuraworks
+# 佐藤み。公式サイト＆ポートフォリオ
+
+佐藤み。本人の公式リンク集・ポートフォリオサイトです。
