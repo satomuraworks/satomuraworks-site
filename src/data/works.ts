@@ -112,7 +112,7 @@ export const works: Work[] = [
     category: 'fanart',
     tags: ['キャラクター', '衣装'],
     image: '/images/works/006riku.png',
-    description: 'キャラクターイラストです。',
+    description: 'ゲームのキャラクターイラストです。',
     tools: 'Procreate',
     productionTime: '7時間',
     isFanart: true,
